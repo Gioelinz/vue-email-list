@@ -11,7 +11,12 @@
 </head>
 
 <body>
-    <div id="root"></div>
+    <div id="root">
+        <h1>Lista Emails:</h1>
+        <ul>
+            <li v-show="total" v-for="email in emails">{{ email }}</li>
+        </ul>
+    </div>
     <script src="js/script.js"></script>
 </body>
 

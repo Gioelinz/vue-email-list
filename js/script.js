@@ -8,6 +8,7 @@ const app = new Vue({
     data: {
         emails: [],
         totalGenEmails: 10,
+        currentIndex: undefined,
     },
     methods: {
         getRandEmail() {

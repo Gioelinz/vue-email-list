@@ -19,7 +19,9 @@
             <!-- List container -->
             <div class="d-flex justify-content-center mt-3" v-if="emails.length === totalGenEmails">
                 <div class="list-group w-50 text-center">
-                    <a href="#" class="list-group-item list-group-item-action" v-for="email in emails">
+                    <a role="button" class="list-group-item list-group-item-action"
+                        :class="{active: currentIndex == index}" v-for="(email, index) in emails"
+                        @click="currentIndex = index">
                         {{ email }}
                     </a>
                 </div>
